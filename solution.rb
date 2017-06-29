@@ -2,9 +2,9 @@ require 'sinatra'
 
 get '/' do
   if params[:nombre] == nil
-    return "Hola Desconocido"
+    'Hola desconocido'
   else
-    return "Hola #{params[:nombre]}"
+    "Hola #{params[:nombre]}"
   end
 end
 
